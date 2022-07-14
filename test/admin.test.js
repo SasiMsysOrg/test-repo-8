@@ -37,15 +37,6 @@ describe('Getting Token and status check', () => {
 });
 
 describe('Get org name for admin routes', () => {
-  before(function (done) {
-    chai.request(server)
-      .get('/rest/admin/getRepoDetails')
-      .set('token', token)
-      .end(function (err, resp) {
-        repoName = resp.body.data.repositories[0].repo_name;
-        done();
-      });
-  });
   it('Expired or Invalid token', done => {
     chai
       .request(server)
