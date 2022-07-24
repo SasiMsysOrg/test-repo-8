@@ -10,6 +10,8 @@ const Logger = require('./logger');
 
 const saltRounds = 10;
 
+const a = 50;
+
 dotenv.config();
 
 /**
