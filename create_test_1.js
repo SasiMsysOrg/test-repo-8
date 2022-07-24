@@ -12,6 +12,8 @@ const saltRounds = 10;
 
 const a = 51;
 
+const b = 60;
+
 dotenv.config();
 
 /**
